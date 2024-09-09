@@ -1,0 +1,272 @@
+/*Utilizando RealTime Colors*/
+@import url('https://fonts.googleapis.com/css?family=Abril%20Fatface:700|Baskervville%20SC:400');
+
+var{
+    --text: #040b0c;
+    --background: #f2fafb;
+    --primary: #44bcc8;
+    --secondary: #a6ced4;
+    --accent: #9c6ed4;
+}
+
+body {
+  font-family: 'Baskervville SC';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Abril Fatface';
+  font-weight: 700;
+}
+
+html {font-size: 16px;}
+
+h1 {font-size: 67.36px;}
+
+h2 {font-size: 50.56px;}
+
+h3 {font-size: 37.92px;}
+
+h4 {font-size: 28.48px;}
+
+h5 {font-size: 21.28px;}
+
+small {font-size: 12px;}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header e Footer*/
+header{
+    background-color: #44bcc8;
+    padding: 12px;
+    margin: 0 0;
+    margin-bottom: 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding: 12px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover{
+    color: #175157;
+}
+nav .ativo{
+    color: #175157;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #44bcc8;
+    border-top: 1px solid #ddd; /* Linha sutil para separar o footer do conteúdo */
+    padding: 20px;
+    font-size: 14px;
+}
+
+.footercontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footercontainer ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footercontainer li {
+    list-style: none;
+}
+
+.footercontainer a {
+    text-decoration: none;
+}
+
+.footercontainer a:hover {
+    text-decoration: underline;
+}
+
+.footercontainer strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+
+
+/*Index*/
+body{
+    background-color: #f2f2f2;
+}
+
+.container{
+    margin: 30px 50px;
+    padding: 50px 20px;
+    gap: 20px;
+    background-color: #a6ced4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+}
+
+section{
+    text-align: center;
+}
+main button{
+    margin: 30px;
+}
+
+
+
+/*Pacotes*/
+table {
+    width: 100%; 
+    margin: 20px 0;
+    border: solid 0.5px rgb(0, 0, 0)
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+    background-color: #000000; 
+    color: #f2fafb;
+}
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff; 
+    border: none; 
+    color: white; 
+    padding: 10px 15px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px; 
+    margin: 5px 0; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+button a {
+    color: white; 
+    text-decoration: none;
+}
+
+
+
+/*/Pego do w3School*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 10; /* Adicionado para garantir que as setas estejam acima dos outros elementos */
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
