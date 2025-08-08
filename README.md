@@ -1,1 +1,1 @@
-https://hinyzw.github.io/Turismo/
+https://TailyniDev.github.io/Turismo/
